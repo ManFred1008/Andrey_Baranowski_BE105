@@ -1,0 +1,97 @@
+h1, h2, h3, h4, h5, h6 {
+	font-size:21px;
+	margin-bottom:20px;
+	text-align:center;
+	color:green;
+}
+
+.content h1 {
+	background-color:yellow;
+	height:70px;
+	padding-top:1em;
+}
+
+p {
+	margin:0 20px 30px;
+	font-weight:500;
+}
+
+a {
+	text-decoration: none;
+}
+
+li>ul {
+	list-style-image: url("img/gal.svg")
+}
+
+ul {
+	list-style-image: url("img/leaf.svg")
+}
+
+ul,ol {
+	margin:20px 0 20px 100px;
+}
+
+.menu {
+	flex:0 0 500px;
+	background-color: #548ca0;
+	height:2000px;
+}
+
+.content {
+	background-color: #9984be;
+	flex:1 1 0;
+}
+
+.wrap {
+	display: flex;
+	flex-direction:row;
+}
+
+ul li span,span a {
+	font-weight:600;
+	font-size:21px;
+	color:rgb(255 255 255);
+}
+
+li > ul,a {
+	font-weight:600;
+	font-size:21px;
+	color:rgb(156 39 176);
+}
+
+ul li span:hover {
+	color:red;
+}
+
+ul li ul li:hover {
+	color:orange;
+}
+
+ul li ul li a:hover {
+	color:orange;
+}
+
+ul li a:hover {
+	color:red;
+}
+
+#logo {
+	width:400px;
+	height:90px;
+	font-size:40px;
+	text-align:center;
+	color:green;
+	font-weight:600;
+	text-shadow:5px 5px 10px black;
+	text-transform:uppercase;
+	background-color:orange;
+	border:10px solid #673ab7;
+	border-radius:50%;
+	margin-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:20px;
+	box-shadow:0 0 50px #080118;
+	padding-top:55px;
+}
