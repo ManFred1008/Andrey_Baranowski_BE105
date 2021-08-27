@@ -16,17 +16,17 @@
          <legend>Общая информация</legend>
          <div class="input">
             <label for="surname">Фамилия</label><br/>
-               <input id="surname" type="text" name="surname" required placeholder="Иванов" minlength="2" maxlength="50" title="Ваша фамилия">
+               <input id="surname" type="text" name="surname" required placeholder="Иванов" minlength="2" maxlength="50" pattern="^[А-Яа-яЁё]\S+$" title="Ваша фамилия">
          </div>
 
          <div class="input">
             Имя<br/>
-            <input type="text" name="fname" required placeholder="Иван" minlength="2" maxlength="50" title="Ваше имя">
+            <input type="text" name="fname" required placeholder="Иван" minlength="2" maxlength="50" pattern="^[А-Яа-яЁё]\S+$" title="Ваше имя">
          </div>
 
          <div class="input">
             Отчество <br/>
-            <input type="text" name="father" placeholder="Иванович" minlength="2" maxlength="30" title="Ваше отчество">
+            <input type="text" name="father" placeholder="Иванович" minlength="2" maxlength="30" pattern="^[А-Яа-яЁё]\S+$" title="Ваше отчество">
          </div>
 
          <div class="input">
@@ -51,12 +51,12 @@
          <legend>Контактная информация</legend>
          <div class="input">
             Телефон <br/>
-            <input type="tel" name="telephone" required placeholder="+375-XX-XXX-XX-XX" title="Твой телефон">
+            <input type="tel" name="telephone" required placeholder="+375-XX-XXX-XX-XX" pattern="^(\+375|80\-)(29|25|44|33)(\-\d{3})(\-\d{2})(\-\d{2})$" title="Твой телефон">
          </div>
 
          <div class="input">
             Электронная почта <br/>
-            <input type="email" name="email" placeholder="_____@gmail.com" title="Твой email">
+            <input type="email" name="email" placeholder="_____@gmail.com" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" title="Твой email">
          </div>
 
          <div class="input">
@@ -197,7 +197,7 @@
             <legend>Место работы 1</legend>
             <div class="input">
                Введите место работы 1<br/>
-               <input type="text" name="work1" > 
+               <input type="text" name="work1" placeholder="Место работы №1" > 
             </div>
             <div class="input">
                Начало работы: <br/>
@@ -213,7 +213,7 @@
             <legend>Место работы 2</legend>
             <div class="input">
                Введите место работы 2<br/>
-               <input type="text" name="work2"> 
+               <input type="text" name="work2" placeholder="Место работы №2"> 
             </div>
             <div class="input">
                Начало работы: <br/>
@@ -229,7 +229,7 @@
             <legend>Место работы 3</legend>
             <div class="input">
                Введите место работы 3<br/>
-               <input type="text" name="work3"> 
+               <input type="text" name="work3" placeholder="Место работы №3"> 
             </div>
             <div class="input">
                Начало работы: <br/>
