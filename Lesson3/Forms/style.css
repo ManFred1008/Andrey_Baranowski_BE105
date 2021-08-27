@@ -1,0 +1,118 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   height: 10000px;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   font-size: 24px;
+   background-image: url(img/fon.jpg);
+}
+
+.set {
+   border: 40px solid;
+   border-image: url(img/ramka.png) 40 60/ 40px stretch ;
+   box-sizing:border-box;
+   width: calc(50% - 40px - 20px);
+   min-width: 600px;
+   height: 700px;
+   overflow: auto;
+}
+
+.set, fieldset fieldset, textarea {
+   display: inline-block;
+   vertical-align: top;
+   margin: 20px 20px 10px 30px;
+   padding: 20px 20px 20px 20px;
+   border-radius: 15px;
+}
+
+.set legend {
+   font-size: 30px;
+   background-color: black;
+   border: 1px solid black;
+   box-shadow: 0 10px 10px black;
+   border-radius: 15px;
+   color: #d3f420;
+   padding: 0 10px;
+   margin-bottom: 20px;
+}
+
+.set fieldset legend  {
+   background-color: white;
+   border: none;
+   color: #f4bb20;
+}
+
+fieldset fieldset{
+   width: 80%;
+   border: 5px dashed rgb(207, 219, 30);
+}
+
+.input {
+   color: #6fe7d1;
+   padding-left: 20px;
+}
+
+.input,
+.input input
+ {
+   margin: 10px 0px 20px 10px;
+   font-size: 24px;
+
+}
+
+.input input,
+.input select  {
+   color: black;
+}
+.input ::placeholder {
+   font-size: 24px;
+   color: dimgrey;
+   /* width: 400px; */
+   padding: 10px;
+}
+textarea {
+   font-size: 24px;
+   color: darkgrey;
+}
+
+.button {
+   width: 400px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.but {
+   padding: 10px;
+   margin: 20px 10px 20px 20px;
+   background-color: #ededed;
+   font-size: 24px;
+   color: #05977c;
+   border: 3px solid;
+   border-radius: 15px;
+}
+
+.but:hover {
+   cursor: pointer;
+   background-color: darkgray;
+}
+
+.green:hover {
+      box-shadow: 0 0 20px darkgreen;
+      color: rgb(7, 43, 7);
+}
+
+.red:hover {
+   box-shadow: 0 0 20px darkred;
+   color: rgb(44, 6, 6);
+}
+
+.green {
+   border-color:green;
+}
+
+.red {
+   border-color: red;
+}

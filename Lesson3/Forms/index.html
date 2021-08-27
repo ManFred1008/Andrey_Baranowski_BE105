@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="Andrey Baranowski">
+   <meta name="description" content="Task-Forms">
+   <link rel="stylesheet" href="style.css">
+   <title>Forms</title>
+</head>
+<body>
+   <form action="#" method="post" name="questionnaire">
+
+      <fieldset class="set">
+         <legend>Общая информация</legend>
+         <div class="input">
+            <label for="surname">Фамилия</label><br/>
+               <input id="surname" type="text" name="surname" required placeholder="Иванов" minlength="2" maxlength="50" title="Ваша фамилия">
+         </div>
+
+         <div class="input">
+            Имя<br/>
+            <input type="text" name="fname" required placeholder="Иван" minlength="2" maxlength="50" title="Ваше имя">
+         </div>
+
+         <div class="input">
+            Отчество <br/>
+            <input type="text" name="father" placeholder="Иванович" minlength="2" maxlength="30" title="Ваше отчество">
+         </div>
+
+         <div class="input">
+            Дата рождения <br/>
+            <input type="date" name="birthday" required title="День рождения">
+         </div>
+
+         <div class="input">
+            Пол <br/>
+            <input type="radio" name="gender" title="Жми, если мужик">Мужчина
+            <input type="radio" name="gender" title="Жми, если женщина">Женщина
+            <input type="radio" name="gender" title="Жмите, если не определились">Другое
+         </div>
+
+         <div class="input">
+            Фото <br/>
+            <input type="file" name="Photo" title="Загрузи фотку">
+         </div>
+      </fieldset>
+
+      <fieldset class="set">
+         <legend>Контактная информация</legend>
+         <div class="input">
+            Телефон <br/>
+            <input type="tel" name="telephone" required placeholder="+375-XX-XXX-XX-XX" title="Твой телефон">
+         </div>
+
+         <div class="input">
+            Электронная почта <br/>
+            <input type="email" name="email" placeholder="_____@gmail.com" title="Твой email">
+         </div>
+
+         <div class="input">
+            Адрес проживания <br/>
+            <input type="text" name="Address" placeholder="ул.Ленина, 1, кв.1" title="Где живёшь?">
+         </div>
+
+         <div class="input">
+            Город проживания <br/>
+            <select class="input" name="City" title="Все мы минчане, но всё-таки...">
+               <optgroup label="Областной центр">
+                  <option value="city1">Брест</option>
+                  <option value="city2">Витебск</option>
+                  <option value="city3">Гомель</option>
+                  <option value="city4">Гродно</option>
+                  <option value="city5" selected>Минск</option>
+                  <option value="city6">Могилев</option>
+               </optgroup>
+               <optgroup label="Брестская область">
+                  <option value="city1-1">Барановичи</option>
+                  <option value="city1-2">Пинск</option>
+                  <option value="city1-3">Кобрин</option>
+                  <option value="city1-4">Берёза</option>
+                  <option value="city1-5">Лунинец</option>
+                  <option value="city1-6">Ивацевичи</option>
+                  <option value="city1-7">Пружаны</option>
+                  <option value="city1-8">Иваново</option>
+                  <option value="city1-9">Дрогичин</option>
+                  <option value="city1-10">Ганцевичи</option>
+               </optgroup>
+               <optgroup label="Витебская область">
+                  <option value="city2-1">Орша</option>
+                  <option value="city2-2">Новополоцк</option>
+                  <option value="city2-3">Полоцк</option>
+                  <option value="city2-4">Поставы</option>
+                  <option value="city2-5">Глубокое</option>
+                  <option value="city2-6">Лепель</option>
+                  <option value="city2-7">Новолукомль</option>
+                  <option value="city2-8">Городок</option>
+                  <option value="city2-9">Барань</option>
+                  <option value="city2-10">Браслав</option>
+               </optgroup>
+               <optgroup label="Гомельская область">
+                  <option value="city3-1">Мозырь</option>
+                  <option value="city3-2">Жлобин</option>
+                  <option value="city3-3">Речица</option>
+                  <option value="city3-4">Светлогорск</option>
+                  <option value="city3-5">Калинковичи</option>
+                  <option value="city3-6">Рогачёв</option>
+                  <option value="city3-7">Добруш</option>
+                  <option value="city3-8">Житковичи</option>
+                  <option value="city3-9">Хойники</option>
+                  <option value="city3-10">Лельчицы</option>
+               </optgroup>
+               <optgroup label="Гродненская область">
+                  <option value="city4-1">Лида</option>
+                  <option value="city4-2">Слоним</option>
+                  <option value="city4-3">Волковыск</option>
+                  <option value="city4-4">Сморгонь</option>
+                  <option value="city4-5">Новогрудок</option>
+                  <option value="city4-6">Ошмяны</option>
+                  <option value="city4-7">Щучин</option>
+                  <option value="city4-8">Мосты</option>
+                  <option value="city4-9">Островец</option>
+                  <option value="city4-10">Скидель</option>
+               </optgroup>
+               <optgroup label="Минская область">
+                  <option value="city5-1">Борисов</option>
+                  <option value="city5-2">Солигорск</option>
+                  <option value="city5-3">Молодечно</option>
+                  <option value="city5-4">Жодино</option>
+                  <option value="city5-5">Слуцк</option>
+                  <option value="city5-6">Дзержинск</option>
+                  <option value="city5-7">Вилейка</option>
+                  <option value="city5-8">Марьина Горка</option>
+                  <option value="city5-9">Столбцы</option>
+                  <option value="city5-10">Смолевичи</option>
+               </optgroup>
+               <optgroup label="Могилёвская область">
+                  <option value="city6-1">Бобруйск</option>
+                  <option value="city6-2">Горки</option>
+                  <option value="city6-3">Осиповичи</option>
+                  <option value="city6-4">Кричев</option>
+                  <option value="city6-5">Быхов</option>
+                  <option value="city6-6">Климовичи</option>
+                  <option value="city6-7">Шклов</option>
+                  <option value="city6-8">Костюковичи</option>
+                  <option value="city6-9">Чаусы</option>
+                  <option value="city6-10">Мстиславль</option>
+               </optgroup>
+            </select>
+         </div>
+      </fieldset>   
+
+      <fieldset class="set">
+         <legend> Образование(наименование учреждений)</legend>
+
+         <fieldset>
+         <div class="input">
+            <input type="checkbox" name="education[]" value="hight" title="Жми, если сильно умный">Высшее
+         </div>
+         <div class="input">
+            <input type="text" name="hight_school" placeholder="Название учебного заведения" title="Ты где таким умным стал?">
+         </div>   
+         </fieldset>
+
+         <fieldset>
+         <div class="input">
+            <input type="checkbox" name="education[]" value="middle" title="Жми, если 11 классов позади">Среднее 
+         </div>
+         <div class="input">
+            <input type="text" name="middle_school" placeholder="Название учебного заведения" title="В какой школе учился?">
+         </div>
+         </fieldset>
+
+         <fieldset>
+         <div class="input">
+            <input type="checkbox" name="education[]" value="add" title="Жми, если ещё где-то учился">Дополнительное
+         </div>
+         <div class="input">
+            <input type="text" name="add_school" placeholder="Название учебного заведения" title="Ну где ты там ещё учился?">
+         </div>
+         </fieldset>
+
+         <fieldset>
+         <div class="input">
+            <input type="checkbox" name="education[]" value="courses" title="Мы университетов не кончали, но...">Курсы
+         </div>
+         <div class="input">
+            <input type="text" name="courses_school" placeholder="Название учебного заведения" title="Чё за курсы? Хорошие?">
+         </div>        
+         </fieldset>
+      </fieldset>
+
+      <fieldset class="set">
+         <legend>Карьера (в порядке убывания)</legend>
+         <fieldset>
+            <legend>Место работы 1</legend>
+            <div class="input">
+               Введите место работы 1<br/>
+               <input type="text" name="work1" > 
+            </div>
+            <div class="input">
+               Начало работы: <br/>
+               <input type="date" name="start_w1">
+            </div>
+            <div class="input">
+               Окончание работы: <br/>
+               <input type="date" name="finish_w1">
+            </div>
+         </fieldset>
+
+         <fieldset>
+            <legend>Место работы 2</legend>
+            <div class="input">
+               Введите место работы 2<br/>
+               <input type="text" name="work2"> 
+            </div>
+            <div class="input">
+               Начало работы: <br/>
+               <input type="date" name="start_w2">
+            </div>
+            <div class="input">
+               Окончание работы: <br/>
+               <input type="date" name="finish_w2">
+            </div>
+         </fieldset>
+
+         <fieldset>
+            <legend>Место работы 3</legend>
+            <div class="input">
+               Введите место работы 3<br/>
+               <input type="text" name="work3"> 
+            </div>
+            <div class="input">
+               Начало работы: <br/>
+               <input type="date" name="start_w3">
+            </div>
+            <div class="input">
+               Окончание работы: <br/>
+               <input type="date" name="finish_w3">
+            </div>
+         </fieldset>
+      </fieldset>
+
+      <fieldset class="set">
+         <legend>О себе</legend>
+         <div class="input">
+            Расскажите о себе <br/>
+            <textarea name="About_customer" cols="35" rows="15" placeholder="Опишите какой Вы трудолюбивый, приятный, коммуникабельный, красивый, безупречный, а потом немного правды - и всё..."></textarea>
+         </div>
+      </fieldset>
+
+      <div class="button">
+         <button class="but green" type="submit">Отправить</button>
+         <button class="but red" type="reset">Сбросить</button>
+      </div>
+   </form>
+</body>
+</html>
