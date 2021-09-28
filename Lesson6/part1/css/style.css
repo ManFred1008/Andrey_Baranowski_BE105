@@ -1,0 +1,130 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+/* font-family: 'Arvo', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+/* body {
+   background-color: #E5E5E5;
+} */
+
+.your_choice {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 880px;
+   background-color: #fff;
+   /* margin-top: 50px; */
+}
+
+.head h1,
+.head p {
+   text-align: center;
+}
+
+.head h1 {
+   font-family: 'Arvo', serif;
+   font-size: 36px;
+   font-weight: 400;
+   line-height: 48px;
+   color: #212121;
+}
+
+.head p {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 14px;
+   line-height: 26px;
+   color: #9FA3A7;
+}
+
+.head p {
+   margin-top: 10px;
+   margin-bottom: 50px;
+}
+
+.main {
+   border-radius: 5px;
+   display: flex;
+   height: 480px;
+   overflow: hidden;
+}
+
+.main .option {
+   display: flex;
+   flex-direction: column;
+   width: 400px;
+   justify-content: center;
+   align-items: center;
+   box-shadow: inset 0 4px 4px -1px rgba(255, 255, 255, 1), inset 0 4px 4px 0px rgba(0,0,0,0.25);
+   border: 1px solid #E8E9ED;
+   border-radius: 10px;
+} 
+
+.main .option:hover {
+   background-color: #8F75BE;
+   color: #fff;
+   box-shadow: none;
+   border:0;
+   border-radius: 0;
+}
+
+.main .option:hover a {
+   color:#FFC80A
+}
+
+.main .option:hover p {
+   color: #fff;
+}
+
+.main .option:hover .button button {
+   background-color: #8F75BE;
+   color: #fff;
+   box-shadow: none;
+}
+
+.main .option a {
+   width: 100%;
+   display: block;
+   text-decoration: none;
+   text-align: center;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: bold;
+   font-size: 12px;
+   letter-spacing: 2.4px;
+   color: #9FA3A7;
+}
+
+.main .option span {
+   display: block;
+   text-align: center;
+   font-family: 'Arvo', serif;
+   font-size: 36px;
+   margin: 20px 95px 25px;
+}
+
+.main .option p {
+   margin: 0 95px;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 12px;
+   line-height: 22px;
+   color: #9FA3A7;
+   text-align: center;
+}
+
+.main .option .button button {
+   padding: 15px 25px;
+   border: 3px solid #FFC80A;
+   border-radius: 25px;
+   box-shadow: 0 4px 4px -2px rgba(255, 255, 255, 1), 0 4px 4px rgba(0,0,0,0.25);
+   background-color: #fff;
+   margin-top: 60px;
+   cursor: pointer;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 700;
+   letter-spacing: 2.4px;
+   font-size: 12px;
+}

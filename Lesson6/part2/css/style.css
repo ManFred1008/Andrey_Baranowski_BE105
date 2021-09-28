@@ -1,0 +1,96 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: peru;
+}
+
+.galery {
+   margin-top: 200px;
+   display: flex;
+   justify-content: space-evenly;   
+}
+
+.avatar {
+   width: 300px;
+   height: 300px;
+   overflow: hidden;
+   position: relative;
+   border:20px solid #fff;
+}
+
+.avatar:first-child {
+   background-color: teal;
+}
+
+.avatar:nth-child(2) {
+   background-color: yellow;
+}
+
+.avatar:nth-child(3) {
+   background-color: palevioletred;
+}
+
+.avatar .b-color,
+.avatar .clothes,
+.avatar .hair,
+.avatar .facial-hair,
+.avatar .nose,
+.avatar .eyes,
+.avatar .glasses,
+.avatar .mouth {
+   position: absolute;
+}
+
+.avatar .clothes,
+.avatar .hair,
+.avatar .facial-hair,
+.avatar .nose,
+.avatar .eyes,
+.avatar .glasses,
+.avatar .mouth {
+   z-index: 1;
+}
+
+.avatar .b-color {
+   left: -10px;
+   top: 20px;
+}
+
+.avatar .clothes {
+   left: -10px;
+   top:200px;
+}
+
+.avatar .hair {
+   right: -30px;
+   bottom: -44px;
+}
+
+.avatar .facial-hair {
+   left: 60px;
+   top: 133px;
+   z-index: 2;
+}
+
+.avatar .nose {
+   left: 137px;
+   top: 104px;
+}
+
+.avatar .eyes {
+   left: 100px;
+   top: 92px;
+}
+
+.avatar .glasses {
+   left: 71px;
+   top: 82px;
+}
+
+.avatar .mouth {
+   left: 110px;
+   top: 156px;
+}
